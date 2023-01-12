@@ -1,0 +1,76 @@
+:root {
+    --brand: #107000;
+    --text: #212121;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: var(--text);
+}
+
+.serif {
+    font-family: 'Cardo', serif;
+}
+
+main {
+    display: flex;
+    align-items: stretch;
+}
+
+header {
+    flex: 0 0 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 0px 30px #00000020;
+    z-index: 10;
+}
+
+header .header-name {
+    font-size: 44px;
+}
+
+header .header-title {
+    font-size: 28px;
+    margin-bottom: 70px;
+}
+
+header nav {
+    margin-bottom: 70px;
+}
+
+header nav a {
+    display: block;
+    text-align: center;
+    color: var(--brand);
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 500ms ease-in-out;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+header nav a:hover {
+    border-color: var(--brand);
+}
+
+header .address span {
+    display: block;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.image {
+    flex-grow: 1;
+    height: 100vh;
+}
+
+.caucus {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    vertical-align: middle;
+}
