@@ -1,6 +1,8 @@
 :root {
     --brand: #107000;
     --text: #212121;
+    --caption: #ffffff;
+    --caption-bg: rgb(0, 0, 0, 0.5);
 }
 
 body {
@@ -95,7 +97,9 @@ section > span {
     transform: translate(-50%, 0%);
     left: 50%;
     text-align: center;
-    color: white;
+    color: var(--caption);
     line-height: 1.6;
     letter-spacing: 2px;
+    padding: 5px;
+    background-color: var(--caption-bg);
 }
