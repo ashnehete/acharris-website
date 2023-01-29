@@ -29,6 +29,8 @@ header {
     box-shadow: 5px 0px 30px #00000020;
     z-index: 10;
     min-width: 400px;
+    padding-top: 50px;
+    padding-bottom: 70px;
 }
 
 header .header-name {
@@ -42,11 +44,10 @@ header .header-name a {
 
 header .header-title {
     font-size: 28px;
-    margin-bottom: 70px;
 }
 
 header nav {
-    margin-bottom: 70px;
+    margin-top: 70px;
     width: 90%;
 }
 
@@ -71,6 +72,10 @@ header nav a:hover {
     border-color: var(--brand);
 }
 
+header .address {
+    margin-top: 70px;
+}
+
 header .address span {
     display: block;
     text-align: center;
@@ -79,13 +84,12 @@ header .address span {
 }
 
 section {
-    height: 100vh;
     position: relative;
     text-align: center;
     background-repeat: repeat;
 }
 
-img {
+section > img {
     height: 100vh;
     object-fit: contain;
     vertical-align: middle;
@@ -102,4 +106,16 @@ section > span {
     letter-spacing: 2px;
     padding: 5px;
     background-color: var(--caption-bg);
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    section > img {
+        width: 100%;
+        height: 100%;
+    }
 }
