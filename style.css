@@ -114,6 +114,10 @@ section > span {
         flex-direction: column;
     }
 
+    header {
+        min-width: 0;
+    }
+
     section > img {
         width: 100%;
         height: 100%;
