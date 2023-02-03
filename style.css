@@ -20,6 +20,8 @@ main {
     align-items: stretch;
 }
 
+/* Header */
+
 header {
     flex-grow: 1;
     display: flex;
@@ -46,6 +48,7 @@ header .header-title {
     font-size: 28px;
 }
 
+/* Navigation Menu */
 header nav {
     margin-top: 70px;
     width: 90%;
@@ -72,6 +75,19 @@ header nav a:hover {
     border-color: var(--brand);
 }
 
+header span.back {
+    margin-top: 50px;
+}
+
+header span.back a {
+    color: var(--text);
+}
+
+header span.back a:hover {
+    border-color: var(--text);
+}
+
+/* Address */
 header .address {
     margin-top: 70px;
 }
@@ -83,6 +99,7 @@ header .address span {
     letter-spacing: 2px;
 }
 
+/* Image Section */
 section {
     position: relative;
     text-align: center;
